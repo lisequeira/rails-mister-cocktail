@@ -1,0 +1,16 @@
+<h1 class="text-center">Ingredients</h1>
+
+<div class="container">
+  <% @ingredients.each do |c| %>
+    <p><%= c.name %></p>
+  <% end %>
+
+  <hr>
+
+<%= link_to 'New Ingredient',  new_ingredient_path %> |
+<%= link_to 'Back',  root_path %>
+</div>
+
+
+
+

@@ -1,0 +1,14 @@
+<h1 class="text-center">Add ingredient</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <%= simple_form_for @ingredient do |f| %>
+        <%= f.input :name, placeholder: "description of ingredient" %>
+        <%= f.submit "Add ingredient", class: "btn btn-primary" %>
+    <% end %>
+
+     <form action="/ingredient" method="post"></form>
+     <%= link_to 'Back',  :back %>
+    </div>
+  </div>
+</div>
