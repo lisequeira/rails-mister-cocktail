@@ -15,4 +15,6 @@ Rails.application.routes.draw do
 
   resources :ingredients, only: [:new, :create, :index]
 
+  mount Attachinary::Engine => "/attachinary"
+
 end
